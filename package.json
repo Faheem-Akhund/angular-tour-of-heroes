@@ -5,11 +5,9 @@
     "ng": "ng",
     "watch": "ng build --watch --configuration development",
     "dev": "react-scripts start",
-    "start": "serve -s build",
+    "start": "node server.js",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "react-scripts test --env=jsdom"
   },
   "private": true,
   "dependencies": {
@@ -39,9 +37,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.6.2"
-  },
-  "engines": {
-    "node": "16.15.0",
-    "npm": "8.5.5"
   }
 }
